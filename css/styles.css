@@ -1,0 +1,945 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F7E1D7;
+}
+
+/* ----------- Header ------------ */
+header{
+    background-color: #EFF2EF;
+    border-end-end-radius: 2rem;
+    border-end-start-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    margin-bottom: 10px;
+    width: 100%;
+}
+header div a h1{
+    font-family: 'Bad Script', cursive;
+    font-size: 2rem;
+    color: #6495ed;
+    /* display: inline-block; */
+}
+header div {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+header div img{
+    height: 4rem;
+    width: 4rem;
+}
+header div a{
+    text-decoration: none;
+}
+
+header nav ul{
+    list-style: none;
+    margin-right: 2rem;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #FF5A5F;
+    font-weight: bold;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1.2rem;
+}
+header nav ul li{
+    display: inline-block;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    transition: 1s;
+}
+header nav ul li:hover{
+    transform: scale(1.1);
+
+}
+
+/*! -------------MAIN INDEX---------------- */
+
+main .titulo-index {
+    background-image: url(../img/imagen-principal2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 60vh;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main .titulo-index div{
+    text-align: center;
+    font-family: 'Bad Script', cursive;
+    font-size: 3rem;
+    color: #6495ed;
+    text-shadow: 1rem 1rem 0.8rem #FF5A5F,-1rem -1rem 0.8rem #FF5A5F,1px 1px 0 black;
+}
+
+
+/* ------pedido-------- */
+
+
+main .pedido{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+main .pedido .pedido-titulo h2{
+    font-family: 'Bad Script', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 1rem 1rem 0.8rem #073489,-1rem -1rem 0.8rem #b1ccfd;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+main .pedido .pedido-cajita{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+main .pedido .pedido-cajita a div img{
+    height: 10rem;
+    width: 10rem;
+}
+main .pedido .pedido-cajita a{
+    display: inline-block;
+    background-color:#EFF2EF;
+    width: 200px;
+    border-radius: 2rem;
+    text-decoration: none;
+}
+main .pedido .pedido-cajita a div{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .pedido .pedido-cajita a div p{
+    color:#FF5A5F;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* -----Productos----- */
+
+main .productos-principales .productos-titulo h2{
+    font-family: 'Bad Script', cursive;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 1rem 1rem 0.8rem #073489,-1rem -1rem 0.8rem #b1ccfd;
+    margin-bottom: 5rem;
+}
+main .productos-principales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .productos-principales .productos-caja{
+    background-color:#EFF2EF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5rem;
+    border-radius: 2rem;
+    width: 80rem;
+    height: 30rem;
+    align-items: center;
+}
+main .productos-principales .productos-caja div{
+    display: inline-block;
+    text-align: center;
+}
+main .productos-principales .productos-caja div p{
+    color:#FF5A5F;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1rem;
+    width: 20rem;
+}
+main .productos-principales .productos-caja div h2{
+    font-family: 'Bad Script', cursive;
+    font-size: 1.5rem;
+}
+main .productos-principales .productos-caja div img{
+    width: 40rem;
+    height: 25rem;
+    object-fit:cover;
+    border-radius: 2rem;
+}
+main .productos-principales .veganos{
+    flex-direction: row-reverse;
+}
+main .productos-principales .sin-azucar{
+    flex-direction: row-reverse;
+}
+
+/* ----Galeria---- */
+
+main .galeria .galeria-titulo h2{
+    font-family: 'Bad Script', cursive;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 1rem 1rem 0.8rem #073489,-1rem -1rem 0.8rem #b1ccfd;
+    margin-bottom: 5rem;
+}
+
+main .galeria{
+    margin-bottom: 5rem;
+}
+main .galeria .galeria-fotos{
+    display: grid;
+    grid-auto-rows: 5rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 20rem;
+    grid-template-areas: 
+    "img-1 img-1 img-2 img-5"
+    "img-1 img-1 img-8 img-8"
+    "img-7 img-6 img-8 img-8"
+    "img-7 img-3 img-3 img-4"
+    ;
+    gap: 1rem;
+}
+main .galeria .galeria-fotos .img-1{
+    grid-area: img-1;
+}
+main .galeria .galeria-fotos .img-2{
+    grid-area: img-2;
+}
+main .galeria .galeria-fotos .img-3{
+    grid-area: img-3;
+}
+main .galeria .galeria-fotos .img-4{
+    grid-area: img-4;
+}
+main .galeria .galeria-fotos .img-5{
+    grid-area: img-5;
+}
+main .galeria .galeria-fotos .img-6{
+    grid-area: img-6;
+}
+main .galeria .galeria-fotos .img-7{
+    grid-area: img-7;
+}
+main .galeria .galeria-fotos .img-8{
+    grid-area: img-8;
+}
+main .galeria .galeria-fotos .galeria-img figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main .galeria .galeria-fotos .galeria-img figure{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    box-shadow: -8px 9px 14px -8px rgba(0,0,0,0.82);
+    -webkit-box-shadow: -8px 9px 14px -8px rgba(0,0,0,0.82);
+    -moz-box-shadow: -8px 9px 14px -8px rgba(0,0,0,0.82);
+}
+main .galeria .galeria-fotos .galeria-img figure img{
+    border-radius: 2rem;
+
+}
+main .galeria .galeria-fotos .galeria-img figure{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+main .galeria .galeria-fotos .galeria-img figure::before{
+    content: "@copito.ar";
+    position: absolute;
+    background-color: #00000055;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 2rem;
+    transform: scale(0);
+    transition: transform .3s;
+    font-family: 'Bad Script', cursive;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 1rem 1rem 0.8rem #073489,-1rem -1rem 0.8rem #b1ccfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+main .galeria .galeria-fotos .galeria-img figure:hover::before{
+    transform: scale(1) rotate(1turn);
+}
+
+
+/* -------whatsapp-flotante-------- */
+
+main .whatsapp-flotante{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #6494ed5a;
+    border-radius: 15px;
+}
+main .whatsapp-flotante a{
+    display: flex;
+    text-decoration: none;
+}
+main .whatsapp-flotante a img{
+    width: 3rem;
+    height: 3rem;
+}
+main .whatsapp-flotante a p{
+    font-size: 0.8rem;
+    color:#FF5A5F;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+
+/* !-----------MAIN PRODUCTOS---------- */
+
+main .titulo-productos{
+    background-image: url(../img/productos-fondo-titulo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 60vh;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .titulo-productos div{
+    text-align: center;
+    color: #FF5A5F;
+    text-shadow: 1rem 1rem 0.8rem #6495ed,-1rem -1rem 0.8rem #6495ed,1px 1px 0 black;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+main .titulo-productos div h2{
+    font-family: 'Bad Script', cursive;
+}
+main .titulo-productos div p{
+    font-family: 'Hind Siliguri', sans-serif;
+
+}
+
+/* --------SABORES AL PESO------ */
+
+main .sabores-alpeso .sabores-alpeso-titulo h2{
+    font-family: 'Bad Script', cursive;
+    font-size: 3rem;
+    text-shadow: 1rem 1rem 0.8rem #073489,-1rem -1rem 0.8rem #b1ccfd;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+main .sabores-alpeso{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+main .sabores-alpeso .sabores-alpeso-caja1{
+    width: 80%;
+}
+main .sabores-alpeso .sabores-alpeso-caja1 .sabores-alpeso-caja-grande{
+    width: 100%;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+main .sabores-alpeso .sabores-alpeso-caja1 .sabores-alpeso-caja-grande .sabores-alpeso-categoria-titulo{
+    width: 100%;
+    height: 6rem;
+}
+main .sabores-alpeso .sabores-alpeso-caja1 .sabores-alpeso-caja-grande .sabores-alpeso-categoria-titulo h3{
+    font-family: 'Bad Script', cursive;
+    font-size: 3rem;
+    text-shadow: 1rem 1rem 0.8rem #ccdeff,-1rem -1rem 0.8rem #ccdeff;
+}
+main .sabores-alpeso .sabores-alpeso-caja1 .sabores-alpeso-caja-grande .gustos{
+    display: flex;
+    justify-content: space-evenly;
+}
+main .sabores-alpeso .sabores-alpeso-caja1 .sabores-alpeso-caja-grande .gustos ul{
+    width: 25%;
+    margin-top: 2.5rem;
+}
+main .sabores-alpeso .sabores-alpeso-caja1 .sabores-alpeso-caja-grande .gustos ul li{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 2rem;
+    color: #FF5A5F;
+    list-style:circle;
+}
+.sabores-alpeso .sabores-alpeso-caja2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.sabores-alpeso .sabores-alpeso-caja2 .sabores-alpeso-caja-chica .sabores-alpeso-categoria-titulo{
+    height: 6rem;
+}
+
+
+.sabores-alpeso .sabores-alpeso-caja2{
+    width: 85%;
+}
+.sabores-alpeso .sabores-alpeso-caja2 .sabores-alpeso-caja-chica{
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+.sabores-alpeso .sabores-alpeso-caja2 .sabores-alpeso-caja-chica .gustos ul{
+    width: 85%;
+    margin-top: 2.5rem;
+}
+.sabores-alpeso .sabores-alpeso-caja2 .sabores-alpeso-caja-chica .gustos ul li{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 2rem;
+    color: #FF5A5F;
+    list-style:circle;
+}
+.sabores-alpeso .sabores-alpeso-caja2 .sabores-alpeso-caja-chica .gustos{
+    display: flex;
+    justify-content: space-evenly;
+}
+.sabores-alpeso .sabores-alpeso-caja2 .sabores-alpeso-caja-chica .sabores-alpeso-categoria-titulo h3{
+    font-family: 'Bad Script', cursive;
+    font-size: 3rem;
+    text-shadow: 1rem 1rem 0.8rem #073489,-1rem -1rem 0.8rem #b1ccfd;
+}
+
+
+main .sabores-alpeso .sabores-alpeso-caja1 .sabores-alpeso-cremas .sabores-alpeso-cremas-titulo{
+    background-image: url(../img/productos-helado-crema.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 2rem;
+    width: 100%;
+}
+main .sabores-alpeso .sabores-alpeso-caja1 .sabores-alpeso-chocolates .sabores-alpeso-chocolates-titulo{
+    background-image: url(../img/producto-helado-chocolate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 2rem;
+    width: 100%;
+}
+main .sabores-alpeso .sabores-alpeso-caja2 .sabores-alpeso-ddl{
+    margin-right: 10px;
+}
+main .sabores-alpeso .sabores-alpeso-caja2 .sabores-alpeso-ddl .sabores-alpeso-ddl-titulo{
+    background-image: url(../img/producto-helado-ddl.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 2rem;
+    width: 100%;
+}
+main .sabores-alpeso .sabores-alpeso-caja2 .sabores-alpeso-veganos{
+    margin-left: 10px;
+}
+main .sabores-alpeso .sabores-alpeso-caja2 .sabores-alpeso-veganos .sabores-alpeso-veganos-titulo{
+    background-image: url(../img/producto-helado-vegano.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 2rem;
+    width: 100%;
+}
+
+/* ----------Productos postres----------- */
+
+main .productos-postres{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 3.75rem;
+}
+main .productos-postres .cajita-postres{
+    width: 30rem;
+    height: 30rem;
+    display: inline-block;
+    border-radius: 2rem;
+    margin: 1.25rem;
+}
+main .productos-postres .cajita-postres h2{
+    font-family: 'Bad Script', cursive;
+    font-size: 3rem;
+    text-shadow: 1rem 1rem 0.8rem #ccdeff,-1rem -1rem 0.8rem #ccdeff;
+    text-align: center;
+}
+main .productos-postres .postres-cubanitos{
+    background-image: url(../img/producto-helado-cubanitos.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+main .productos-postres .postres-tabletas{
+    background-image: url(../img/producto-helado-tabletas.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+main .productos-postres .postres-paletas-lisas{
+    background-image: url(../img/producto-helado-lisas.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+main .productos-postres .postres-paletas-rellenas{
+    background-image: url(../img/producto-helado-rellenas.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+main .productos-postres .postres-tortas{
+    background-image: url(../img/producto-helado-tortas.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+main .productos-postres .postres-barras{
+    background-image: url(../img/producto-helado-barra.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/* !-----------MAIN SUCURSALES---------- */
+
+main .sucursal-titulo{
+background-image: url(../img/sucursales-4-titulo.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+width: 100%;
+height: 60vh;
+border-radius: 2rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+main .sucursal-titulo{
+    text-align: center;
+    color: #FF5A5F;
+    text-shadow: 1rem 1rem 0.8rem #6495ed,-1rem -1rem 0.8rem #6495ed,1px 1px 0 black;
+    font-size: 3rem;
+}
+main .sucursal-titulo h2{
+    font-family: 'Bad Script', cursive;
+}
+main .sucursal-titulo p{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+main .caja-sucursales .caja-sucursales-titulo{
+    font-family: 'Bad Script', cursive;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 1rem 1rem 0.8rem #073489,-1rem -1rem 0.8rem #b1ccfd;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+main .caja-sucursales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main .caja-sucursales .sucursal{
+    background-color:#EFF2EF;
+    margin-bottom: 5rem;
+    border-radius: 2rem;
+    width: 80rem;
+    height: 30rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+main .caja-sucursales .sucursal-2{
+    flex-direction: row-reverse;
+}
+main .caja-sucursales .sucursal-4{
+    flex-direction: row-reverse;
+}
+main .caja-sucursales .sucursal .sucursal-img img{
+    width: 40rem;
+    height: 25rem;
+    object-fit:cover;
+    border-radius: 2rem;
+}
+main .caja-sucursales .sucursal .sucursal-texto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+main .caja-sucursales .sucursal .sucursal-texto iframe{
+    margin-top: 1rem;
+    width: 25rem;
+    height: 7rem;
+    border-radius: 2rem;
+}
+main .caja-sucursales .sucursal .sucursal-texto .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .caja-sucursales .sucursal .sucursal-texto .item p{
+    color:#FF5A5F;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1rem;
+    width: 20rem;
+    text-align: center;
+}
+main .caja-sucursales .sucursal .sucursal-texto .item img{
+    width: 2rem;
+    height: 2rem;
+}
+main .caja-sucursales .sucursal .item-rappi-1{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+main .caja-sucursales .sucursal .item-rappi-2{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+main .caja-sucursales .sucursal .item-rappi img{
+    width: 4rem;
+    height: 4rem;
+}
+main .caja-sucursales .sucursal .sucursal-texto p{
+    color:#FF5A5F;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1rem;
+    width: 20rem;
+    text-align: center;
+}
+main .caja-sucursales .sucursal .sucursal-texto h2{
+    font-family: 'Bad Script', cursive;
+    font-size: 1.5rem;
+}
+
+/* !-----------PEDIDOS---------- */
+
+main .titulo-online div{
+    background-image: url(../img/pedido-titulo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-attachment: fixed;
+    color: #FF5A5F;
+    text-shadow: 1rem 1rem 0.8rem #6495ed,-1rem -1rem 0.8rem #6495ed,1px 1px 0 black;
+    font-size: 3rem;
+    width: 100%;
+    height: 60vh;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .titulo-online h2{
+    font-family: 'Bad Script', cursive;
+}
+main .titulo-online p{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+main .caja-online-pedido .formulario-pedido form .pasos{
+    text-align: center;
+}
+main .caja-online-pedido .formulario-pedido form .pasos h3{
+    font-family: 'Bad Script', cursive;
+    font-size: 3rem;
+    color: black;
+    text-shadow: 1rem 1rem 0.8rem #6495ed,-1rem -1rem 0.8rem #6495ed;
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+}
+
+main .caja-online-pedido .formulario-pedido form .pasos h4{
+    font-family: 'Bad Script', cursive;
+    font-size: 2rem;
+    text-shadow: 1rem 1rem 0.8rem #6495ed,-1rem -1rem 0.8rem #6495ed;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+main .caja-online-pedido .formulario-pedido form .pasos p{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1.5rem;
+    color: #FF5A5F;
+    text-shadow: 1rem 1rem 0.8rem #6495ed,-1rem -1rem 0.8rem #6495ed;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+main .caja-online-pedido .formulario-pedido form .pasos img{
+    width: 4rem;
+    height: 4rem;
+}
+main .caja-online-pedido .formulario-pedido form .cajita-seleccion-productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+}
+main .caja-online-pedido .formulario-pedido form .cajita-seleccion-productos .caja-opcion{
+    width: 30rem;
+    height: 4rem;
+    border: none;
+    border-radius: 1rem;
+    display: inline-block;
+    background-color: white;
+    font-size: 1.5rem;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-style: italic;
+    padding: 10px;
+    margin: 10px;
+}
+main .caja-online-pedido .formulario-pedido form .cajita-seleccion-productos .caja-opcion select{
+    border-radius: 1rem;
+    display: inline-block;
+    background-color: white;
+    font-size: 0.8rem;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-style: italic;
+    width: 200px;
+}
+main .caja-online-pedido .formulario-pedido form .cajita-seleccion-productos .caja-opcion select option{
+    border-radius: 1rem;
+}
+
+main .caja-online-pedido .formulario-pedido form .nombre-tlf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+main .caja-online-pedido .formulario-pedido form .nombre-tlf div input{
+    width: 20rem;
+    height: 4rem;
+    border: none;
+    background-color: white;
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-style: italic;
+}
+main .caja-online-pedido .formulario-pedido form .nombre-tlf div{
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+main .caja-online-pedido .formulario-pedido form .direccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+}
+main .caja-online-pedido .formulario-pedido form .direccion .direccion-valor label{
+    font-size: 1.2rem;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-style: italic;
+}
+main .caja-online-pedido .formulario-pedido form .direccion .direccion-valor input{
+    width: 10rem;
+    height: 4rem;
+    border: none;
+    background-color: white;
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-style: italic;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+main .caja-online-pedido .formulario-pedido form .direccion .enviar input{
+    background-color: rgba(255, 107, 107, 0.544);
+    width: 7rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    font-family: 'Hind Siliguri', sans-serif;
+    border-radius: 0.6rem;
+    border: none;
+}
+
+
+
+/* !-----------TRABAJA CON NOSOTROS---------- */
+main .titulo-trabaja{
+    background-image: url(../img/trabaja-titulo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #FF5A5F;
+    text-shadow: 1rem 1rem 0.8rem #6495ed,-1rem -1rem 0.8rem #6495ed,1px 1px 0 black;
+    font-size: 3rem;
+    width: 100%;
+    height: 70vh;
+    border-radius: 2rem;
+    font-family: 'Bad Script', cursive;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .form-trabaja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+}
+main .form-trabaja form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main .form-trabaja form .envianos h3{
+    font-family: 'Bad Script', cursive;
+    font-size: 3rem;
+    color: black;
+    text-shadow: 1rem 1rem 0.8rem #6495ed,-1rem -1rem 0.8rem #6495ed;
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+main .form-trabaja form .trabaja-opcion input{
+    width: 30rem;
+    height: 4rem;
+    border: none;
+    border-radius: 1rem;
+    display: inline-block;
+    background-color: white;
+    font-size: 1.5rem;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-style: italic;
+    padding: 10px;
+    margin: 10px;
+}
+main .form-trabaja form .msj-trabaja textarea{
+    width: 30rem;
+    height: 20rem;
+    border: none;
+    border-radius: 1rem;
+    display: inline-block;
+    background-color: white;
+    font-size: 1.5rem;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-style: italic;
+    padding: 10px;
+    margin: 10px;
+}
+main .form-trabaja form .botones-trabaja .enviar-trabaja input{
+    background-color: rgba(255, 107, 107, 0.544);
+    width: 5rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    font-family: 'Hind Siliguri', sans-serif;
+    border-radius: 0.6rem;
+    border: none;
+}
+main .form-trabaja form .botones-trabaja .adjuntar-cv input{
+    background-color: rgba(255, 107, 107, 0.544);
+    width: 8rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    font-family: 'Hind Siliguri', sans-serif;
+    border-radius: 0.6rem;
+    border: none;
+}
+main .form-trabaja form .botones-trabaja{
+    width: 30rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* !-----------FOOTER---------- */
+
+
+footer{
+    background-color: #C1EDCC;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    display: flex;
+    justify-content: space-around;
+    height: 20rem;
+    width: 100%;
+    flex-wrap: wrap;
+    /* margin-top: 3.75rem; */
+}
+
+footer .footer-logo{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+footer .footer-logo a{
+    text-decoration: none;
+    color: #6495ed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer-logo a h2{
+    color: #6495ed;
+    font-family: 'Bad Script', cursive;
+    font-size: 1.5rem;
+}
+footer .footer-logo a p{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1rem;
+    color: #FF5A5F;
+}
+footer .footer-logo img{
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+}
+footer .redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer .redes a img{
+    height: 4rem;
+    width: 4rem;
+    display:flex ;
+}
+footer .links-de-interes{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer .links-de-interes h2{
+    color: #6495ed;
+    font-family: 'Bad Script', cursive;
+    font-size: 1.5rem;
+}
+footer .links-de-interes a{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1rem;
+    color: #FF5A5F;
+    text-align: left;
+}
