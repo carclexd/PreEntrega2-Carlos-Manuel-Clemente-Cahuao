@@ -89,10 +89,20 @@ main .titulo-index div{
 
 
 main .pedido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .pedido .pedido-online-instruccion{
     margin-top: 5rem;
     margin-bottom: 5rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-main .pedido .pedido-titulo h2{
+main .pedido .pedido-online-instruccion .pedido-titulo h2{
     font-family: 'Bad Script', cursive;
     font-size: 1.5rem;
     text-align: center;
@@ -100,38 +110,41 @@ main .pedido .pedido-titulo h2{
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
-main .pedido .pedido-cajita{
+main .pedido .pedido-online-instruccion .pedido-cajita{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-left: 10rem;
     margin-right: 10rem;
+    width: 100%;
 }
-main .pedido .pedido-cajita a div img{
+main .pedido .pedido-online-instruccion .pedido-cajita a div img{
     height: 10rem;
     width: 10rem;
 }
-main .pedido .pedido-cajita a{
+main .pedido .pedido-online-instruccion .pedido-cajita a{
     display: inline-block;
     background-color:#EFF2EF;
     width: 200px;
     border-radius: 2rem;
     text-decoration: none;
+    margin: 1rem;
 }
-main .pedido .pedido-cajita a div{
+main .pedido .pedido-online-instruccion .pedido-cajita a div{
     display: inline-block;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-main .pedido .pedido-cajita a div p{
+main .pedido .pedido-online-instruccion .pedido-cajita a div p{
     color:#FF5A5F;
     font-family: 'Hind Siliguri', sans-serif;
     font-size: 1rem;
     text-align: center;
 }
 
-/* -----Productos----- */
+/* *-----Productos----- */
 
 main .productos-principales .productos-titulo h2{
     font-family: 'Bad Script', cursive;
@@ -139,6 +152,8 @@ main .productos-principales .productos-titulo h2{
     text-align: center;
     text-shadow: 1rem 1rem 0.8rem #073489,-1rem -1rem 0.8rem #b1ccfd;
     margin-bottom: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 main .productos-principales{
     display: flex;
@@ -151,29 +166,34 @@ main .productos-principales .productos-caja{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 5rem;
     border-radius: 2rem;
-    width: 80rem;
-    height: 30rem;
+    width: 90%;
+    padding: 3rem;
     align-items: center;
+
 }
-main .productos-principales .productos-caja div{
-    display: inline-block;
+main .productos-principales .productos-caja .productos-caja-texto{
     text-align: center;
+    width: 20rem;
 }
-main .productos-principales .productos-caja div p{
+main .productos-principales .productos-caja .productos-caja-texto p{
     color:#FF5A5F;
     font-family: 'Hind Siliguri', sans-serif;
     font-size: 1rem;
-    width: 20rem;
 }
-main .productos-principales .productos-caja div h2{
+main .productos-principales .productos-caja .productos-caja-texto h2{
     font-family: 'Bad Script', cursive;
     font-size: 1.5rem;
 }
-main .productos-principales .productos-caja div img{
+main .productos-principales .productos-caja .productos-caja-img{
     width: 40rem;
     height: 25rem;
+}
+main .productos-principales .productos-caja .productos-caja-img img{
+    width: 100%;
+    height: 100%;
     object-fit:cover;
     border-radius: 2rem;
 }
@@ -199,7 +219,6 @@ main .galeria{
 }
 main .galeria .galeria-fotos{
     display: grid;
-    grid-auto-rows: 5rem;
     grid-template-columns: repeat(4,1fr);
     grid-auto-rows: 20rem;
     grid-template-areas: 
@@ -942,4 +961,64 @@ footer .links-de-interes a{
     font-size: 1rem;
     color: #FF5A5F;
     text-align: left;
+}
+
+
+                        /*! --------------------Media Query-------------------- */
+
+
+@media screen and (max-width:1174px){
+
+    /** ---------HEADER---------- */
+
+    header nav ul li a{
+        font-size: 1rem;
+    }
+    header nav ul li{
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+    }
+
+
+
+    /** ---------INICIO---------- */
+
+    main .productos-principales .productos-caja .productos-caja-texto p{
+        margin-bottom: 3rem;
+    }
+    main .productos-principales .productos-caja{
+        width: auto;
+        flex-direction: column;
+    }
+    main .titulo-index div{
+        font-size: 2rem;
+    }
+
+}
+
+
+@media screen and (max-width:780px){
+
+    /** ---------INICIO---------- */
+    main .productos-principales .productos-caja .productos-caja-img{
+        width: 100%;
+        height: 25rem;
+    }
+    main .galeria .galeria-fotos{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+        "img-1 img-1 img-7" 
+        "img-1 img-1 img-7"
+        "img-6 img-3 img-3"
+        "img-8 img-8 img-2"
+        "img-8 img-8 img-7"
+        "img-4 img-5 img-7"
+        ;
+    }
+
+}
+
+
+@media screen and (max-width:320px){
+
 }
