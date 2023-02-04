@@ -20,6 +20,7 @@ header{
     width: 100%;
 }
 header div a h1{
+    font-weight: bold;
     font-family: 'Bad Script', cursive;
     font-size: 2rem;
     color: #6495ed;
@@ -41,27 +42,30 @@ header div a{
     text-decoration: none;
 }
 
-header nav ul{
+header .barra-nav ul{
     list-style: none;
     margin: 0;
     margin-right: 2rem;
 }
-header nav ul li a{
+header .barra-nav ul li a{
     text-decoration: none;
     color: #FF5A5F;
     font-weight: bold;
     font-family: 'Hind Siliguri', sans-serif;
     font-size: 1.2rem;
+    transition-duration: 1s;
 }
-header nav ul li{
+header .barra-nav ul li a:hover{
+    color: #6495ed;
+}
+header .barra-nav ul li{
     display: inline-block;
     margin-left: 0.7rem;
     margin-right: 0.7rem;
     transition: 1s;
 }
-header nav ul li:hover{
+header .barra-nav ul li:hover{
     transform: scale(1.1);
-
 }
 
 /*! -------------MAIN INDEX---------------- */
@@ -80,13 +84,24 @@ main .titulo-index {
 }
 
 
-main .titulo-index div{
+main .titulo-index div h2{
+    font-weight: bold;
     text-align: center;
     font-family: 'Bad Script', cursive;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #6495ed;
     text-shadow: 1rem 1rem 0.8rem #FF5A5F,-1rem -1rem 0.8rem #FF5A5F,1px 1px 0 black;
 }
+main .titulo-index div p{
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 2rem;
+    font-style: italic;
+    color: #6495ed;
+    text-shadow: 1rem 1rem 0.8rem #FF5A5F,-1rem -1rem 0.8rem #FF5A5F,1px 1px 0 black;
+}
+
 
 
 /* ------pedido-------- */
@@ -113,14 +128,26 @@ main .pedido .pedido-online-instruccion .pedido-titulo h2{
     text-shadow: 1rem 1rem 0.8rem #073489,-1rem -1rem 0.8rem #b1ccfd;
     margin-top: 5rem;
     margin-bottom: 5rem;
+    font-weight: bold;
 }
 main .pedido .pedido-online-instruccion .pedido-cajita{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+main .pedido .pedido-online-instruccion .pedido-cajita a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-left: 10rem;
     margin-right: 10rem;
     width: 100%;
+    transition-duration: 1s;
+}
+main .pedido .pedido-online-instruccion .pedido-cajita a:hover{
+    transform: scale(1.1);
 }
 main .pedido .pedido-online-instruccion .pedido-cajita a div img{
     height: 10rem;
@@ -153,6 +180,7 @@ main .pedido .pedido-online-instruccion .pedido-cajita a div p{
 main .productos-principales .productos-titulo h2{
     font-family: 'Bad Script', cursive;
     font-size: 3rem;
+    font-weight: bold;
     text-align: center;
     text-shadow: 1rem 1rem 0.8rem #073489,-1rem -1rem 0.8rem #b1ccfd;
     margin-bottom: 5rem;
@@ -190,6 +218,7 @@ main .productos-principales .productos-caja .productos-caja-texto p{
 main .productos-principales .productos-caja .productos-caja-texto h2{
     font-family: 'Bad Script', cursive;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 main .productos-principales .productos-caja .productos-caja-img{
     width: 40rem;
@@ -209,6 +238,15 @@ main .productos-principales .sin-azucar{
 }
 
 /* ----Galeria---- */
+
+main .galeria .galeria-titulo h2{
+    font-family: 'Bad Script', cursive;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 1rem 1rem 0.8rem #073489,-1rem -1rem 0.8rem #b1ccfd;
+    margin-bottom: 5rem;
+    font-weight: bold;
+}
 
 main .galeria{
     display: flex;
@@ -296,6 +334,8 @@ main .whatsapp-flotante a p{
 
 /* !-----------MAIN PRODUCTOS---------- */
 
+
+
 main .titulo-productos{
     background-image: url(../img/productos-fondo-titulo.jpg);
     background-repeat: no-repeat;
@@ -318,13 +358,15 @@ main .titulo-productos div{
 }
 main .titulo-productos div h2{
     font-family: 'Bad Script', cursive;
+    font-size: 4rem;
 }
 main .titulo-productos div p{
     font-family: 'Hind Siliguri', sans-serif;
+    font-size: 2rem;
 
 }
 
-/* --------SABORES AL PESO------ */
+/* !----------------------SABORES AL PESO------------------------- */
 
 main .sabores-alpeso .sabores-alpeso-titulo h2{
     font-family: 'Bad Script', cursive;
@@ -358,11 +400,14 @@ main .sabores-alpeso .sabores-alpeso-caja1 .sabores-alpeso-caja-grande .sabores-
 }
 main .sabores-alpeso .sabores-alpeso-caja1 .sabores-alpeso-caja-grande .gustos{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+
 }
 main .sabores-alpeso .sabores-alpeso-caja1 .sabores-alpeso-caja-grande .gustos ul{
-    width: 25%;
+    width: 300px;
     margin-top: 2.5rem;
+    
 }
 main .sabores-alpeso .sabores-alpeso-caja1 .sabores-alpeso-caja-grande .gustos ul li{
     font-family: 'Hind Siliguri', sans-serif;
@@ -373,6 +418,8 @@ main .sabores-alpeso .sabores-alpeso-caja1 .sabores-alpeso-caja-grande .gustos u
 .sabores-alpeso .sabores-alpeso-caja2{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .sabores-alpeso .sabores-alpeso-caja2 .sabores-alpeso-caja-chica .sabores-alpeso-categoria-titulo{
     height: 6rem;
@@ -383,7 +430,7 @@ main .sabores-alpeso .sabores-alpeso-caja1 .sabores-alpeso-caja-grande .gustos u
     width: 85%;
 }
 .sabores-alpeso .sabores-alpeso-caja2 .sabores-alpeso-caja-chica{
-    width: 100%;
+    width: 460px;
     margin-bottom: 2.5rem;
 }
 .sabores-alpeso .sabores-alpeso-caja2 .sabores-alpeso-caja-chica .gustos ul{
@@ -401,6 +448,7 @@ main .sabores-alpeso .sabores-alpeso-caja1 .sabores-alpeso-caja-grande .gustos u
     justify-content: space-evenly;
 }
 .sabores-alpeso .sabores-alpeso-caja2 .sabores-alpeso-caja-chica .sabores-alpeso-categoria-titulo h3{
+    text-align: center;
     font-family: 'Bad Script', cursive;
     font-size: 3rem;
     text-shadow: 1rem 1rem 0.8rem #073489,-1rem -1rem 0.8rem #b1ccfd;
@@ -869,10 +917,23 @@ footer{
     border-top-right-radius: 2rem;
     display: flex;
     justify-content: space-around;
-    height: 20rem;
     width: 100%;
     flex-wrap: wrap;
     /* margin-top: 3.75rem; */
+}
+
+footer .footer-caja{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition-duration: 1s;
+}
+footer .footer-caja:hover{
+    transform: scale(1.1);
 }
 
 footer .footer-logo{
@@ -909,6 +970,13 @@ footer .redes{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+footer .redes a{
+    transition-duration: 1s;
+}
+footer .redes a:hover{
+    transform: scale(1.1)
 }
 footer .redes a img{
     height: 4rem;
@@ -920,6 +988,7 @@ footer .links-de-interes{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 footer .links-de-interes h2{
     color: #6495ed;
@@ -931,20 +1000,25 @@ footer .links-de-interes a{
     font-size: 1rem;
     color: #FF5A5F;
     text-align: left;
+    transition-duration: 1s;
+}
+footer .links-de-interes a:hover{
+    transform: scale(1.1);
 }
 
 
-                        /*! --------------------Media Query-------------------- */
+
+/*! --------------------------Media Query-------------------------- */
 
 
 @media screen and (max-width:1174px){
 
     /** ---------HEADER---------- */
 
-    header nav ul li a{
+    header .barra-nav ul li a{
         font-size: 1rem;
     }
-    header nav ul li{
+    header .barra-nav ul li{
         margin-left: 0.3rem;
         margin-right: 0.3rem;
     }
@@ -963,21 +1037,264 @@ footer .links-de-interes a{
     main .titulo-index div{
         font-size: 2rem;
     }
+    main .galeria .galeria-img-contenedor{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
 
+    /** ---------PRODUCTOS---------- */
+
+    main .sabores-alpeso .sabores-alpeso-caja1 .sabores-alpeso-caja-grande .gustos ul li{
+        font-size: 1rem;
+        list-style: none;
+        text-align: center;
+    }
+    main .sabores-alpeso .sabores-alpeso-caja1 .sabores-alpeso-caja-grande .gustos ul{
+        width: 200px;
+        margin-top: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .sabores-alpeso .sabores-alpeso-caja2 .sabores-alpeso-caja-chica .gustos ul li{
+        font-size: 1rem;
+        list-style: none;
+        text-align: center;
+    }
+    .sabores-alpeso .sabores-alpeso-caja2 .sabores-alpeso-caja-chica .gustos ul{
+        width: 200px;
+        margin-top: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 }
+
 
 
 @media screen and (max-width:780px){
 
     /** ---------INICIO---------- */
+
+    header{
+        flex-direction: column;
+        height:auto;
+    }
+    header div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+    header .barra-nav ul{
+        margin-top: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+    header .barra-nav ul{
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+
+    main .titulo-index div h2{
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    main .titulo-index div p{
+        font-size: 1.5rem;
+    }
+    header .barra-nav ul li{
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+    }
+
+
+
+    main .productos-principales .productos-titulo h2{
+        font-size: 1.5rem;
+    }
     main .productos-principales .productos-caja .productos-caja-img{
         width: 30rem;
         height: 25rem;
+    }
+    main .productos-principales .productos-caja{
+    padding: 1.5rem;
+    
+    }
+
+    main .galeria .galeria-img-contenedor{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "img6 img6"
+        "img6 img6"
+        "img2 img3"
+        "img4 img3"
+        "img4 img5"
+        "img1 img1"
+        "img1 img1"
+        "img7 img8"
+        "img7 img8"
+        ;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    /** ---------PRODUCTOS---------- */
+
+    main .titulo-productos div h2{
+        font-size: 2.5rem;
+    }
+    main .titulo-productos div p{
+        font-size: 1.5rem;
+    
+    }
+}
+
+
+@media screen and (max-width:570px){
+
+    /** ---------INICIO---------- */
+
+
+
+    header div {
+        margin:0;
+
+    }
+    header .barra-nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header .barra-nav ul li{
+        margin-bottom: 0.5rem;
+    }
+    main .productos-principales .productos-caja .productos-caja-img{
+        width: 25rem;
+        height: 20rem;
+    }
+    main .productos-principales .productos-titulo h2{
+        font-size: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /*? ---------PRODUCTOS---------- */
+
+    main .productos-postres .cajita-postres{
+        width: 20rem;
+        height: 20rem;
+    }
+    main .productos-postres .cajita-postres h2{
+        font-size: 2rem;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    
+    .sabores-alpeso .sabores-alpeso-caja2 .sabores-alpeso-caja-chica .sabores-alpeso-categoria-titulo h3{
+        font-size: 2.3rem;
+        font-weight: bold;
+    }
+    .sabores-alpeso .sabores-alpeso-caja2 .sabores-alpeso-caja-chica .sabores-alpeso-categoria-titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main .sabores-alpeso .sabores-alpeso-caja1 .sabores-alpeso-caja-grande .sabores-alpeso-categoria-titulo h3{
+        font-size: 2.3rem;
+    }
+    main .sabores-alpeso .sabores-alpeso-caja1 .sabores-alpeso-caja-grande .sabores-alpeso-categoria-titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 }
 
 
-@media screen and (max-width:320px){
 
+
+@media screen and (max-width:530px){
+
+    /** ---------INICIO---------- */
+
+
+    main .productos-principales .productos-caja .productos-caja-img{
+        width: 300px;
+        height: 300px;
+    }
+    main .productos-principales .productos-caja .productos-caja-texto{
+        text-align: center;
+        width: 15rem;
+    }
+    main .productos-principales .productos-caja{
+        padding: 1rem;
+    }
+    main .pedido .pedido-online-instruccion .pedido-titulo h2{
+        width: 250px;
+        height: 150px;
+        padding: 5px;
+        margin: 0px 0px 0px 0px;
+    }
+    main .galeria .galeria-img-contenedor{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "img6"
+        "img6"
+        "img2"
+        "img4"
+        "img4"
+        "img1"
+        "img1"
+        "img7"
+        "img3"
+        "img5"
+        "img8"
+        ;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media screen and (max-width:400px){
+
+    main .productos-principales .productos-caja{
+        padding: 0;
+        padding-top: 2rem;
+    }
+    main .productos-principales .productos-caja .productos-caja-img{
+        width: 250px;
+        height: 250px;
+        padding: 5px;
+    }
+    main .galeria .galeria-img-contenedor{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /*? ---------PRODUCTOS---------- */
+
+
+}
+
+@media screen and (max-width:400px){
+
+    /*? ---------PRODUCTOS---------- */
+
+    main .productos-postres .cajita-postres{
+        width: 16rem;
+        height: 16rem;
+    }
+    main .sabores-alpeso .sabores-alpeso-titulo h2{
+        font-size: 2.3rem;
+    }
 }

@@ -21,13 +21,13 @@
                 <h1>Copito</h1>
             </a>
         </div>
-        <nav>
+        <nav class="barra-nav">
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./sucursales.html">Sucursales</a></li>
-                <li><a href="./pedidos-online.html">Pedidos online</a></li>
-                <li><a href="./trabaja-con-nosotros.html">Trabaja con nosotros</a></li>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a target="_blank" href="./productos.html">Productos</a></li>
+                <li><a target="_blank" href="./sucursales.html">Sucursales</a></li>
+                <li><a target="_blank" href="./pedidos-online.html">Pedidos online</a></li>
+                <li><a target="_blank" href="./trabaja-con-nosotros.html">Trabaja con nosotros</a></li>
             </ul>
         </nav>
     </header>
@@ -39,28 +39,30 @@
             </div>
         </section>
         <section class="pedido">
-            <div class="pedido-titulo">
-                <h2>¡Realiza tu pedido siguiendo los pasos a continuacion!</h2>
-            </div>
-            <div class="pedido-cajita">
-                <a href="./pedidos-online.html">
-                    <div>
-                        <img src="../img/pedido-seleccionar.png" alt="pote-de-helado">
-                        <p>Selecciona los productos que mas te gusten</p>
-                    </div>
-                </a>
-                <a href="./pedidos-online.html">
-                    <div>
-                        <img src="../img/pedido-localizacion.png" alt="mapa">
-                        <p>¿A que direccion deseas que te enviemos el pedido?</p>
-                    </div>
-                </a>
-                <a href="./pedidos-online.html">
-                    <div>
-                        <img src="../img/pedido-metodo-de-pago.png" alt="mano-recibiendo-moneda">
-                        <p>Elige el metodo de pago, que mas te convenga</p>
-                    </div>
-                </a>
+            <div class="pedido-online-instruccion">
+                <div class="pedido-titulo">
+                    <h2>¡Realiza tu pedido siguiendo los pasos a continuacion!</h2>
+                </div>
+                <div class="pedido-cajita">
+                    <a href="./pages/pedidos-online.html">
+                        <div>
+                            <img src="../img/pedido-seleccionar.png" alt="pote-de-helado">
+                            <p>Selecciona los productos que mas te gusten</p>
+                        </div>
+                    </a>
+                    <a href="./pages/pedidos-online.html">
+                        <div>
+                            <img src="../img/pedido-localizacion.png" alt="mapa">
+                            <p>¿A que direccion deseas que te enviemos el pedido?</p>
+                        </div>
+                    </a>
+                    <a href="./pages/pedidos-online.html">
+                        <div>
+                            <img src="../img/pedido-metodo-de-pago.png" alt="mano-recibiendo-moneda">
+                            <p>Elige el metodo de pago, que mas te convenga</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
         <section class="sabores-alpeso">
@@ -162,7 +164,7 @@
                 </div>
                 <div class="sabores-alpeso-caja-chica sabores-alpeso-veganos">
                     <div class="sabores-alpeso-veganos-titulo sabores-alpeso-categoria-titulo">
-                        <h3>Helado al agua (veganos)</h3>
+                        <h3>Helado al agua</h3>
                     </div>
                     <div class="gustos">
                         <ul>
@@ -202,32 +204,30 @@
         </section>
     </main>
     <footer>
-        <footer>
-            <div class="footer-logo">
-                <a href="../index.html">
-                    <img src="../img/logo.png" alt="logo-referente-a-un-cono-de-helado">
-                    <h2>Copito Heladeria 2023</h2>
-                    <p>Todos los derechos reservados</p>
-                </a>
-            </div>
-            <div class="redes">
-                <a href="https://es-la.facebook.com/">
-                    <img src="../img/facebook.png" alt="facebook">
-                </a>
-                <a href="https://www.whatsapp.com/">
-                    <img src="../img/whatsapp.png" alt="whatsapp">
-                </a>
-                <a href="https://www.instagram.com/">
-                    <img src="../img/instagram.png" alt="instagram">
-                </a>
-            </div>
-            <div class="links-de-interes">
-                <h2>links de interes:</h2>
-                <a href="">Postres</a>
-                <a href="">Promos</a>
-                <a href="">Realiza tu pedido</a>
-                <a href="">Envianos tu C.V.</a>
-            </div>
-        </footer>
+        <div class="footer-logo footer-caja">
+            <a href="../index.html">
+                <img src="../img/logo.png" alt="logo-referente-a-un-cono-de-helado">
+                <h2>Copito Heladeria 2023</h2>
+                <p>Todos los derechos reservados</p>
+            </a>
+        </div>
+        <div class="redes footer-caja">
+            <a href="https://es-la.facebook.com/">
+                <img src="../img/facebook.png" alt="facebook">
+            </a>
+            <a href="https://www.whatsapp.com/">
+                <img src="../img/whatsapp.png" alt="whatsapp">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="../img/instagram.png" alt="instagram">
+            </a>
+        </div>
+        <div class="links-de-interes footer-caja">
+            <h2>links de interes:</h2>
+            <a href="">Postres</a>
+            <a href="">Promos</a>
+            <a href="">Realiza tu pedido</a>
+            <a href="./trabaja-con-nosotros.html">Envianos tu C.V.</a>
+        </div>
     </footer>
 </body>
