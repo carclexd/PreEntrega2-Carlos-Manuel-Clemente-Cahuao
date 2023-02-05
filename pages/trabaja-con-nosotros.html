@@ -5,11 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Hind+Siliguri:wght@300;400;500;700&display=swap" rel="stylesheet">
-
-    <!-- !titulos -- font-family: 'Bad Script', cursive; -->
-
-    <!-- *parrafos --font-family: 'Hind Siliguri', sans-serif; -->
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
     <title>Copito</title>
@@ -36,69 +32,68 @@
         <section class="titulo-trabaja">
             <h2>¡Unete a nuestro equipo!</h2>
         </section>
-        <section class="form-trabaja">
-            <form action="">
-                <div class="envianos">
-                    <h3>Envianos tu C.V.</h3>
-                </div>
-                <div class="trabaja-opcion nombre-trabaja">
-                    <label for="nombre"></label>
-                    <input type="text" name="nombre" placeholder="Nombre">
-                </div>
-                <div class="trabaja-opcion tlf-trabaja">
-                    <label for="tlf"></label>
-                    <input type="tel" name="tlf" placeholder="Telefono">
-                </div>
-                <div class="trabaja-opcion direccion-trabaja">
-                    <label for="direccion"></label>
-                    <input type="text" name="direccion" placeholder="Direccion">
-                </div>
-                <div class="trabaja-opcion correo-trabaja">
-                    <label for="correon"></label>
-                    <input type="email" name="correo" placeholder="Correo">
-                </div>
-                <div class="msj-trabaja">
-                    <label for="Mensaje"></label>
-                    <textarea name="Mensaje" id="" cols="30" rows="10" placeholder="Cuentanos un poco sobre ti..."></textarea>
-                </div>
-                <div class="botones-trabaja">
-                    <div class="enviar-trabaja">
-                        <input type="submit">
+        <section class="form-trabaja container-fluid d-flex flex-column justify-content-center align-items-center">
+            <div class="envianos">
+                <h3>Envianos tu C.V.</h3>
+            </div>
+            <div class=" container w-25 border m-3 p-3">
+                <form action="#" method="#">
+                    <div class="form-group">
+                        <label for="nombre" class="d-block"></label>
+                        <input type="text" name="nombre" placeholder="Nombre" class="w-100 mt-3 border border-0 rounded fs-4 p-1">
                     </div>
-                    <div class="adjuntar-cv">
-                        <input type="button" value="Adjuntar C.V.">
+                    <div class="form-group">
+                        <label for="tlf" class="d-block"></label>
+                        <input type="tel" name="tlf" placeholder="Telefono" class="w-100 mt-3 border border-0 rounded fs-4 p-1">
                     </div>
-                </div>
-            </form>
+                    <div class="form-group">
+                        <label for="direccion" class="d-block"></label>
+                        <input type="text" name="direccion" placeholder="Direccion" class="w-100 mt-3 border border-0 rounded fs-4 p-1">
+                    </div>
+                    <div class="form-group">
+                        <label for="correon" class="d-block"></label>
+                        <input type="email" name="correo" placeholder="Correo" class="w-100 mt-3 border border-0 rounded fs-4 p-1">
+                    </div>
+                    <div class="form-group">
+                        <label for="Mensaje" class="d-block"></label>
+                        <textarea name="Mensaje" id="" cols="30" rows="10" placeholder="Cuentanos un poco sobre ti..." class="w-100 mt-3 border border-0 rounded p-1"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Adjuntar C.V." class="w-100 btn btn-primary mt-3">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="w-100 btn btn-primary mt-3">
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
-        <footer>
-            <div class="footer-logo">
-                <a href="../index.html">
-                    <img src="../img/logo.png" alt="logo-referente-a-un-cono-de-helado">
-                    <h2>Copito Heladeria 2023</h2>
-                    <p>Todos los derechos reservados</p>
-                </a>
-            </div>
-            <div class="redes">
-                <a href="https://es-la.facebook.com/">
-                    <img src="../img/facebook.png" alt="facebook">
-                </a>
-                <a href="https://www.whatsapp.com/">
-                    <img src="../img/whatsapp.png" alt="whatsapp">
-                </a>
-                <a href="https://www.instagram.com/">
-                    <img src="../img/instagram.png" alt="instagram">
-                </a>
-            </div>
-            <div class="links-de-interes">
-                <h2>links de interes:</h2>
-                <a href="">Postres</a>
-                <a href="">Promos</a>
-                <a href="">Realiza tu pedido</a>
-                <a href="">Envianos tu C.V.</a>
-            </div>
-        </footer>
+        <div class="footer-logo footer-caja">
+            <a href="../index.html">
+                <img src="../img/logo.png" alt="logo-referente-a-un-cono-de-helado">
+                <h2>Copito Heladeria 2023</h2>
+                <p>Todos los derechos reservados</p>
+            </a>
+        </div>
+        <div class="redes footer-caja">
+            <a href="https://es-la.facebook.com/">
+                <img src="../img/facebook.png" alt="facebook">
+            </a>
+            <a href="https://www.whatsapp.com/">
+                <img src="../img/whatsapp.png" alt="whatsapp">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="../img/instagram.png" alt="instagram">
+            </a>
+        </div>
+        <div class="links-de-interes footer-caja">
+            <h2>links de interes:</h2>
+            <a href="">Postres</a>
+            <a href="">Promos</a>
+            <a href="">Realiza tu pedido</a>
+            <a href="./trabaja-con-nosotros.html">Envianos tu C.V.</a>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>

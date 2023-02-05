@@ -826,7 +826,6 @@ main .titulo-trabaja{
     background-attachment: fixed;
     color: #FF5A5F;
     text-shadow: 1rem 1rem 0.8rem #6495ed,-1rem -1rem 0.8rem #6495ed,1px 1px 0 black;
-    font-size: 3rem;
     width: 100%;
     height: 70vh;
     border-radius: 2rem;
@@ -836,8 +835,22 @@ main .titulo-trabaja{
     justify-content: center;
     align-items: center;
 }
-main .form-trabaja{
+main .titulo-trabaja h2{
+    font-size: 4rem;
+    font-weight: bold;
+}
+main .form-trabaja .envianos h3{
+    font-family: 'Bad Script', cursive;
+    font-size: 3rem;
+    color: black;
+    text-shadow: 1rem 1rem 0.8rem #6495ed,-1rem -1rem 0.8rem #6495ed;
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+/* main .form-trabaja{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 2.5rem;
@@ -849,15 +862,7 @@ main .form-trabaja form{
     align-items: center;
     flex-direction: column;
 }
-main .form-trabaja form .envianos h3{
-    font-family: 'Bad Script', cursive;
-    font-size: 3rem;
-    color: black;
-    text-shadow: 1rem 1rem 0.8rem #6495ed,-1rem -1rem 0.8rem #6495ed;
-    margin-top: 5rem;
-    margin-bottom: 2.5rem;
-    text-align: center;
-}
+
 main .form-trabaja form .trabaja-opcion input{
     width: 30rem;
     height: 4rem;
@@ -906,7 +911,7 @@ main .form-trabaja form .botones-trabaja{
     width: 30rem;
     display: flex;
     justify-content: space-between;
-}
+} */
 
 /* !-----------FOOTER---------- */
 
